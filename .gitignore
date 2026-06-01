@@ -1,0 +1,6 @@
+.auth/
+node_modules/
+dist/
+reports/
+allure-results/
+*.env
