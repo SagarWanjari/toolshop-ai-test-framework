@@ -1,0 +1,28 @@
+[
+    {
+        "name":"Bolt Cutters",
+        "category":"Hand Tools", 
+        "expectedMinPrice":10
+    },
+    {
+        "name":"Hammer",
+        "category":"Hand Tools", 
+        "expectedMinPrice":5
+    },
+    {
+        "name":"Pliers",
+        "category":"Hand Tools", 
+        "expectedMinPrice":8
+    },
+    {
+        "name":"xyznonexistentproduct123",
+        "category":"Random", 
+        "expectedMinPrice":8
+    },
+    {
+        "name":"Power Tools",
+        "category":"Hand Tools", 
+        "expectedMinPrice":8
+    }
+
+]

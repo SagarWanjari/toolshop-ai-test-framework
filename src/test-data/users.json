@@ -1,0 +1,44 @@
+[
+    {
+        "email": "customer@practicesoftwaretesting.com",
+        "password": "welcome01",
+        "role":"customer",
+        "firstName":"John",
+        "lastName":"Doe",
+        "shouldLoginSucceed":true
+    },
+    {
+        "email": "customer@practicesoftwaretesting.com",
+        "password": "welcome01",
+        "role":"admin",
+        "shouldLoginSucceed":true
+    },
+    {
+        "email":"invalid@test.com",
+        "password":"wrongpassword",
+        "role":"customer",
+        "shouldLoginSucceed":false,
+        "expectedError":"Invalid email or password"
+    },
+    {
+        "email":"",
+        "password":"password123",
+        "role":"customer",
+        "shouldLoginSucceed":false,
+        "expectedError":"Invalid email or password"
+    },
+    {
+        "email":"test@test.com",
+        "password":"",
+        "role":"customer",
+        "shouldLoginSucceed":false,
+        "expectedError":"Invalid email or password"
+    },
+    {
+        "email":"notanemail",
+        "password":"password123",
+        "role":"customer",
+        "shouldLoginSucceed":false,
+        "expectedError":"Invalid email or password"
+    }
+]

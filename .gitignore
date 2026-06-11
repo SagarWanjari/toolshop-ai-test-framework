@@ -4,3 +4,5 @@ dist/
 reports/
 allure-results/
 *.env
+playwright-report/
+test-results/

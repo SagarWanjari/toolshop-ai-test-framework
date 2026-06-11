@@ -10,9 +10,9 @@ setup('authenticate as standard user', async ({page}) =>{
     if(!fs.existsSync(authDir)) fs.mkdirSync(authDir, {recursive:true});
 
     // const loginPage = new LoginPage(page);
-    // await loginPage.goTo("auth/login");
+    // await loginPage.goto();
     // await loginPage.userRegisterAccount();
-    // expect(page).toHaveURL("https://practicesoftwaretesting.com/auth/login");
+    // await expect(page).toHaveURL("https://practicesoftwaretesting.com/auth/login");
 
     await page.goto('/auth/login');
     await page.fill('[data-test="email"]', process.env.USER_EMAIL!);
