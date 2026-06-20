@@ -3,6 +3,7 @@ import { LoginPage } from '@pages/auth/LoginPage';
 import { HomePage } from '@pages/shop/HomePage';
 import { productDetailPage } from '@pages/shop/ProductDetailPage';
 import { CartPage } from '@pages/shop/CartPage';
+import { CheckoutPage } from '@pages/shop/CheckoutPage';
 
 
 type Fixtures = {
@@ -10,6 +11,7 @@ type Fixtures = {
     homePage : HomePage;
     productDetailPage : productDetailPage;
     cartPage: CartPage;
+    checkoutPage: CheckoutPage;
 };
 
 export const test = base.extend<Fixtures>({
@@ -30,6 +32,11 @@ export const test = base.extend<Fixtures>({
     cartPage: async ({ page }, use) => {
         await page.goto('/');
         await use(new CartPage(page));
+    }
+    ,
+    checkoutPage: async ({ page }, use) => {
+        await page.goto('/');
+        await use(new CheckoutPage(page));
     }
 });
 
