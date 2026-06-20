@@ -1,6 +1,4 @@
 import { expect, Page } from "@playwright/test";
-import { count } from "node:console";
-
 
 
 export class HomePage {

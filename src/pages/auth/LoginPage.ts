@@ -10,7 +10,6 @@ constructor(private page:Page){};
    }
 
    async login(email:string, password:string): Promise<void>{
-    await this.page.pause();
         if(email){
             await this.page.fill('[data-test="email"]', email);
         } 
@@ -72,7 +71,7 @@ constructor(private page:Page){};
         await this.page.getByLabel("State").fill("Maharashtra");
         await this.page.getByLabel("Phone").fill("1234567890");
         await this.page.getByLabel("Email address").fill("ram.sharma@xyx.com");
-        await this.page.getByLabel("Password").fill("RamSharma@123");
+        await this.page.getByLabel("Password").fill("Ram.Sharma@01");
         await this.page.getByRole("button",{name:"Register"}).click();
     }
 }
